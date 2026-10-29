@@ -1,0 +1,50 @@
+16494:C 29 Oct 2026 19:54:37.499 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+16494:C 29 Oct 2026 19:54:37.499 # Redis version=7.0.15, bits=64, commit=00000000, modified=0, pid=16494, just started
+16494:C 29 Oct 2026 19:54:37.499 # Configuration loaded
+16494:M 29 Oct 2026 19:54:37.499 * monotonic clock: POSIX clock_gettime
+16494:M 29 Oct 2026 19:54:37.500 # Warning: Could not create server TCP listening socket ::*:6390: unable to bind socket, errno: 97
+16494:M 29 Oct 2026 19:54:37.500 * Running mode=standalone, port=6390.
+16494:M 29 Oct 2026 19:54:37.500 # Server initialized
+16494:M 29 Oct 2026 19:54:37.500 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+16494:M 29 Oct 2026 19:54:37.501 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+16494:M 29 Oct 2026 19:54:37.506 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+16494:M 29 Oct 2026 19:54:37.506 * Ready to accept connections
+16494:M 29 Oct 2026 19:54:37.509 * Replica 127.0.0.1:6391 asks for synchronization
+16494:M 29 Oct 2026 19:54:37.509 * Full resync requested by replica 127.0.0.1:6391
+16494:M 29 Oct 2026 19:54:37.509 * Replication backlog created, my new replication IDs are '199adb18e5950a7195bf7622119ec613c09b25d6' and '0000000000000000000000000000000000000000'
+16494:M 29 Oct 2026 19:54:37.509 * Delay next BGSAVE for diskless SYNC
+16494:M 29 Oct 2026 19:54:42.527 * Starting BGSAVE for SYNC with target: replicas sockets
+16494:M 29 Oct 2026 19:54:42.528 * Background RDB transfer started by pid 16517
+16517:C 29 Oct 2026 19:54:42.562 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+16494:M 29 Oct 2026 19:54:42.562 # Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+16494:M 29 Oct 2026 19:54:42.618 * Background RDB transfer terminated with success
+16494:M 29 Oct 2026 19:54:42.618 * Streamed RDB transfer with replica 127.0.0.1:6391 succeeded (socket). Waiting for REPLCONF ACK from slave to enable streaming
+16494:M 29 Oct 2026 19:54:42.618 * Synchronization with replica 127.0.0.1:6391 succeeded
+16494:M 29 Oct 2026 19:54:55.300 * Starting automatic rewriting of AOF on 6751285400% growth
+16494:M 29 Oct 2026 19:54:55.304 * Creating AOF incr file appendonly.aof.2.incr.aof on background rewrite
+16494:M 29 Oct 2026 19:54:55.305 * Background append only file rewriting started by pid 16549
+16549:C 29 Oct 2026 19:54:55.612 * Successfully created the temporary AOF base file temp-rewriteaof-bg-16549.aof
+16549:C 29 Oct 2026 19:54:55.613 * Fork CoW for AOF rewrite: current 9 MB, peak 9 MB, average 8 MB
+16494:M 29 Oct 2026 19:54:55.619 * Background AOF rewrite terminated with success
+16494:M 29 Oct 2026 19:54:55.619 * Successfully renamed the temporary AOF base file temp-rewriteaof-bg-16549.aof into appendonly.aof.2.base.rdb
+16494:M 29 Oct 2026 19:54:55.620 * Removing the history file appendonly.aof.1.incr.aof in the background
+16494:M 29 Oct 2026 19:54:55.620 * Removing the history file appendonly.aof.1.base.rdb in the background
+16494:M 29 Oct 2026 19:54:55.623 * Background AOF rewrite finished successfully
+16494:M 29 Oct 2026 19:55:05.861 * Starting automatic rewriting of AOF on 984% growth
+16494:M 29 Oct 2026 19:55:05.863 * Creating AOF incr file appendonly.aof.3.incr.aof on background rewrite
+16494:M 29 Oct 2026 19:55:05.867 * Background append only file rewriting started by pid 16556
+16556:C 29 Oct 2026 19:55:06.276 * Successfully created the temporary AOF base file temp-rewriteaof-bg-16556.aof
+16556:C 29 Oct 2026 19:55:06.281 * Fork CoW for AOF rewrite: current 9 MB, peak 9 MB, average 8 MB
+16494:M 29 Oct 2026 19:55:06.383 * Background AOF rewrite terminated with success
+16494:M 29 Oct 2026 19:55:06.383 * Successfully renamed the temporary AOF base file temp-rewriteaof-bg-16556.aof into appendonly.aof.3.base.rdb
+16494:M 29 Oct 2026 19:55:06.387 * Removing the history file appendonly.aof.2.incr.aof in the background
+16494:M 29 Oct 2026 19:55:06.387 * Removing the history file appendonly.aof.2.base.rdb in the background
+16494:M 29 Oct 2026 19:55:06.397 * Background AOF rewrite finished successfully
+16494:M 29 Oct 2026 19:55:21.426 # Connection with replica 127.0.0.1:6391 lost.
+16494:M 29 Oct 2026 19:55:21.431 * Replica 127.0.0.1:6391 asks for synchronization
+16494:M 29 Oct 2026 19:55:21.431 * Partial resynchronization request from 127.0.0.1:6391 accepted. Sending 0 bytes of backlog starting from offset 172965254.
+16494:M 29 Oct 2026 19:55:21.664 # Connection with replica 127.0.0.1:6391 lost.
+16494:signal-handler (1793264121) Received SIGTERM scheduling shutdown...
+16494:M 29 Oct 2026 19:55:21.730 # User requested shutdown...
+16494:M 29 Oct 2026 19:55:21.730 * Calling fsync() on the AOF file.
+16494:M 29 Oct 2026 19:55:21.730 # Redis is now ready to exit, bye bye...

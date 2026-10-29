@@ -1,0 +1,114 @@
+{
+  "config": {
+    "Design": "redislua",
+    "WriterProfile": false,
+    "DSN": "postgres://postgres:postgres@127.0.0.1:5432/hotledger?sslmode=disable\u0026connect_timeout=5",
+    "Layout": {
+      "Viewers": 100000,
+      "Creators": 10000,
+      "Sem": "wallet",
+      "Stock": 1000000,
+      "HotStock": 1000000
+    },
+    "Skew": 2,
+    "WithdrawFrac": 0.02,
+    "Duration": 30000000000,
+    "Concurrency": 64,
+    "Rate": 0,
+    "BurstSecs": 0,
+    "DupFrac": 0.01,
+    "Slots": 16,
+    "Partitions": 8,
+    "Writers": 2,
+    "Faults": "",
+    "Out": "results/calib/skew-wallet-redislua-2.0",
+    "Self": "/home/claude/projects/hotledger/bin/hotledger",
+    "Mutant": "",
+    "Brokers": "",
+    "ReplicaLag": 0,
+    "RedisMinReplicas": false,
+    "Auction": false,
+    "AuctionPlan": {
+      "N": 200,
+      "Hot": 90000000000,
+      "OtherMin": 90000000000,
+      "OtherMax": 150000000000,
+      "HardMax": 30000000000
+    },
+    "Rules": {
+      "Extended": true,
+      "WindowUs": 2000000,
+      "MinInc": 1,
+      "Reserve": 10
+    },
+    "Bidders": 100000,
+    "ReadFrac": 0.1,
+    "LinTimeout": 10000000000,
+    "PorcupineMaxWidth": 10,
+    "MySQLDSN": "root@tcp(127.0.0.1:3307)/hotledger?timeout=5s",
+    "MySQLIso": "",
+    "MySQLLockingIdem": false,
+    "EscrowHint": false,
+    "MySQLDataDir": "/var/lib/hotledger-mysql",
+    "TBData": "/var/lib/hotledger-tb/0_0.tigerbeetle"
+  },
+  "load": {
+    "ops": 322980,
+    "dup_ops": 3256,
+    "results": {
+      "applied": 314561,
+      "rejected": 11675
+    },
+    "elapsed_sec": 30.008491671,
+    "throughput_ops_per_sec": 10763.866666666667,
+    "latency_ms": {
+      "max": 64.806707,
+      "p50": 5.10654,
+      "p95": 11.588628,
+      "p99": 16.849388,
+      "p999": 28.751306
+    },
+    "retries": 0
+  },
+  "check": {
+    "ops": 326236,
+    "results": {
+      "applied": 314561,
+      "rejected": 11675
+    },
+    "dup_submissions": 3256,
+    "applied_transfers": 311405,
+    "recorded_rejections": 11575,
+    "violations": null,
+    "ok": true
+  },
+  "check_postgres": {
+    "ops": 326236,
+    "results": {
+      "applied": 314561,
+      "rejected": 11675
+    },
+    "dup_submissions": 3256,
+    "applied_transfers": 311405,
+    "recorded_rejections": 11575,
+    "violations": null,
+    "ok": true
+  },
+  "redis_postgres_agreement": "identical",
+  "e2e_latency_ms": {
+    "max": 553.944829,
+    "p50": 33.633942,
+    "p99": 287.944829,
+    "p999": 518.944829
+  },
+  "drain_sec": 2.639908721,
+  "fault_log": null,
+  "cpu": {
+    "server_cpu_sec": 34.61,
+    "client_cpu_sec": 8.298184,
+    "ops": 326236,
+    "server_cpu_sec_per_million_ops": 106.0888436591915,
+    "client_cpu_sec_per_million_ops": 25.436138255741238
+  },
+  "ok": true
+}

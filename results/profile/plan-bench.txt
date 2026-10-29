@@ -1,0 +1,6 @@
+BenchmarkPlan-2        	    2286	    951838 ns/op	       238.0 ns/transfer	     919 B/op	       0 allocs/op
+BenchmarkPlan-2        	    2184	    977642 ns/op	       244.4 ns/transfer	     962 B/op	       0 allocs/op
+BenchmarkPlan-2        	    2186	   1017586 ns/op	       254.4 ns/transfer	     961 B/op	       0 allocs/op
+BenchmarkPlanNaive-2   	     717	   3419549 ns/op	       854.9 ns/transfer	 2351454 B/op	     215 allocs/op
+BenchmarkPlanNaive-2   	     633	   3658008 ns/op	       914.5 ns/transfer	 2351418 B/op	     215 allocs/op
+BenchmarkPlanNaive-2   	     676	   3778361 ns/op	       944.6 ns/transfer	 2351897 B/op	     215 allocs/op

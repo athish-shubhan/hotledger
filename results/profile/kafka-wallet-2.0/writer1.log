@@ -1,0 +1,9 @@
+19:53:28.968860 [w1] assigned p4 from offset 0
+19:53:28.969411 [w1] assigned p5 from offset 0
+19:53:28.969810 [w1] assigned p6 from offset 0
+19:53:28.970262 [w1] assigned p7 from offset 0
+19:54:03.952678 [w1] stopped: applied=76279 batches=4721 fenced=0
+19:54:03.952772 [w1] revoked p4
+19:54:03.952776 [w1] revoked p5
+19:54:03.952777 [w1] revoked p6
+19:54:03.952778 [w1] revoked p7

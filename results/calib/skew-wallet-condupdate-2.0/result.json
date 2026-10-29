@@ -1,0 +1,94 @@
+{
+  "config": {
+    "Design": "condupdate",
+    "WriterProfile": false,
+    "DSN": "postgres://postgres:postgres@127.0.0.1:5432/hotledger?sslmode=disable\u0026connect_timeout=5",
+    "Layout": {
+      "Viewers": 100000,
+      "Creators": 10000,
+      "Sem": "wallet",
+      "Stock": 1000000,
+      "HotStock": 1000000
+    },
+    "Skew": 2,
+    "WithdrawFrac": 0.02,
+    "Duration": 30000000000,
+    "Concurrency": 64,
+    "Rate": 0,
+    "BurstSecs": 0,
+    "DupFrac": 0.01,
+    "Slots": 16,
+    "Partitions": 8,
+    "Writers": 2,
+    "Faults": "",
+    "Out": "results/calib/skew-wallet-condupdate-2.0",
+    "Self": "/home/claude/projects/hotledger/bin/hotledger",
+    "Mutant": "",
+    "Brokers": "",
+    "ReplicaLag": 0,
+    "RedisMinReplicas": false,
+    "Auction": false,
+    "AuctionPlan": {
+      "N": 200,
+      "Hot": 90000000000,
+      "OtherMin": 90000000000,
+      "OtherMax": 150000000000,
+      "HardMax": 30000000000
+    },
+    "Rules": {
+      "Extended": true,
+      "WindowUs": 2000000,
+      "MinInc": 1,
+      "Reserve": 10
+    },
+    "Bidders": 100000,
+    "ReadFrac": 0.1,
+    "LinTimeout": 10000000000,
+    "PorcupineMaxWidth": 10,
+    "MySQLDSN": "root@tcp(127.0.0.1:3307)/hotledger?timeout=5s",
+    "MySQLIso": "",
+    "MySQLLockingIdem": false,
+    "EscrowHint": false,
+    "MySQLDataDir": "/var/lib/hotledger-mysql",
+    "TBData": "/var/lib/hotledger-tb/0_0.tigerbeetle"
+  },
+  "load": {
+    "ops": 40435,
+    "dup_ops": 423,
+    "results": {
+      "applied": 39356,
+      "rejected": 1502
+    },
+    "elapsed_sec": 30.036620649,
+    "throughput_ops_per_sec": 1345.7333333333333,
+    "latency_ms": {
+      "max": 1524.771501,
+      "p50": 7.249569,
+      "p95": 216.06244,
+      "p99": 393.588715,
+      "p999": 721.308456
+    },
+    "retries": 0
+  },
+  "check": {
+    "ops": 40858,
+    "results": {
+      "applied": 39356,
+      "rejected": 1502
+    },
+    "dup_submissions": 423,
+    "applied_transfers": 38948,
+    "recorded_rejections": 1487,
+    "violations": null,
+    "ok": true
+  },
+  "fault_log": null,
+  "cpu": {
+    "server_cpu_sec": 41.23,
+    "client_cpu_sec": 6.608971,
+    "ops": 40858,
+    "server_cpu_sec_per_million_ops": 1009.1047040971168,
+    "client_cpu_sec_per_million_ops": 161.7546380145871
+  },
+  "ok": true
+}

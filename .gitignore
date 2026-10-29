@@ -1,0 +1,6 @@
+bin/
+runs/
+*.test
+results/runs/*/history.jsonl
+results/runs/*/kafka-data/
+results/runs/*/redis/

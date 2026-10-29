@@ -1,0 +1,181 @@
+2026-10-29 08:55:22.279Z info(io): opening "0_0.tigerbeetle"...
+2026-10-29 08:55:22.355Z warning(main): Grid cache size of 512MiB is small. See --cache-grid
+2026-10-29 08:55:22.382Z info(multiversioning): releases_bundled old: {  }
+2026-10-29 08:55:22.390Z info(multiversioning): releases_bundled new: { 0.17.5, 0.17.6, 0.17.7, 0.17.8, 0.17.9 }
+2026-10-29 08:55:22.390Z info(main): release=0.17.9
+2026-10-29 08:55:22.390Z info(main): release_client_min=0.16.4
+2026-10-29 08:55:22.390Z info(main): releases_bundled={ 0.17.5, 0.17.6, 0.17.7, 0.17.8, 0.17.9 }
+2026-10-29 08:55:22.390Z info(main): git_commit=cc1c06a924e49b11089c521b2209d34c92caaf18
+2026-10-29 08:55:22.391Z info(journal): 0: slot_count=1024 size=1.000244140625GiB headers_size=256KiB prepares_size=1GiB
+2026-10-29 08:55:24.096Z info(replica): 0R: init: replica_count=1 quorum_view_change=1 quorum_replication=1 release=0.17.9
+2026-10-29 08:55:24.096Z info(replica): superblock release=0.17.9
+2026-10-29 08:55:24.286Z info(replica): 0N: transition_to_normal_from_recovering_status: view=1 primary
+2026-10-29 08:55:24.286Z info(main): 0: Allocated 2574MiB during replica init
+2026-10-29 08:55:24.286Z info(main): 0: Grid cache: 512MiB, LSM-tree manifests: 128MiB
+2026-10-29 08:55:24.286Z info(main): 0: cluster=0: listening on net.SocketAddress{ .ip = 127.0.0.1, .port = 3033 }
+2026-10-29 08:55:24.306Z warning(main): A cluster id of 0 is reserved for testing and benchmarking, do not use in production.
+2026-10-29 08:55:24.309Z info(message_bus): 0: on_recv: from=vsr.Peer{ .unknown = void } orderly shutdown
+2026-10-29 08:55:24.310Z info(replica): 0N: state_machine_open_callback: sync_ops=0..0
+2026-10-29 08:55:24.803Z info(message_bus): 0: recv_update_peer: connection from client_likely=117332765131997362537162909295241927009
+2026-10-29 08:55:25.238Z info(message_bus): 0: on_recv: from=vsr.Peer{ .client_likely = 117332765131997362537162909295241927009 } orderly shutdown
+2026-10-29 08:55:25.877Z info(message_bus): 0: recv_update_peer: connection from client_likely=82273437291346949635168345253961279643
+2026-10-29 08:55:26.846Z warning(trace): 0: timing: loop_run_for_ns too slow (56.514ms > 50ms)
+2026-10-29 08:55:27.005Z warning(trace): 0: timing: loop_run_for_ns too slow (117.679ms > 50ms)
+2026-10-29 08:55:27.161Z warning(trace): 0: timing: loop_run_for_ns too slow (125.852ms > 50ms)
+2026-10-29 08:55:27.301Z warning(trace): 0: timing: loop_run_for_ns too slow (109.11ms > 50ms)
+2026-10-29 08:55:27.443Z warning(trace): 0: timing: loop_run_for_ns too slow (111.528ms > 50ms)
+2026-10-29 08:55:27.607Z warning(trace): 0: timing: loop_run_for_ns too slow (123.764ms > 50ms)
+2026-10-29 08:55:27.746Z warning(trace): 0: timing: loop_run_for_ns too slow (118.39ms > 50ms)
+2026-10-29 08:55:27.888Z warning(trace): 0: timing: loop_run_for_ns too slow (111.42ms > 50ms)
+2026-10-29 08:55:28.065Z warning(trace): 0: timing: loop_run_for_ns too slow (146.08ms > 50ms)
+2026-10-29 08:55:28.200Z warning(trace): 0: timing: loop_run_for_ns too slow (104.726ms > 50ms)
+2026-10-29 08:55:28.343Z warning(trace): 0: timing: loop_run_for_ns too slow (112.579ms > 50ms)
+2026-10-29 08:55:28.506Z warning(trace): 0: timing: loop_run_for_ns too slow (123.082ms > 50ms)
+2026-10-29 08:55:28.656Z warning(trace): 0: timing: loop_run_for_ns too slow (119.071ms > 50ms)
+2026-10-29 08:55:28.829Z warning(trace): 0: timing: loop_run_for_ns too slow (131.977ms > 50ms)
+2026-10-29 08:55:28.999Z warning(trace): 0: timing: loop_run_for_ns too slow (129.046ms > 50ms)
+2026-10-29 08:55:29.149Z warning(trace): 0: timing: loop_run_for_ns too slow (119.119ms > 50ms)
+2026-10-29 08:55:29.292Z warning(trace): 0: timing: loop_run_for_ns too slow (113.044ms > 50ms)
+2026-10-29 08:55:29.434Z warning(trace): 0: timing: loop_run_for_ns too slow (111.551ms > 50ms)
+2026-10-29 08:55:29.585Z warning(trace): 0: timing: loop_run_for_ns too slow (121.012ms > 50ms)
+2026-10-29 08:55:29.746Z warning(trace): 0: timing: loop_run_for_ns too slow (130.015ms > 50ms)
+2026-10-29 08:55:29.910Z warning(trace): 0: timing: loop_run_for_ns too slow (133.131ms > 50ms)
+2026-10-29 08:55:30.094Z warning(trace): 0: timing: loop_run_for_ns too slow (133.368ms > 50ms)
+2026-10-29 08:55:30.840Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=0..959 commit_min=991 op=992 commit_max=991 op_prepare_max=1007 free_set.acquired=365 free_set.released=152)
+2026-10-29 08:55:30.843Z info(state_machine): create_accounts: p0=3796us mean=6140us p100=6760us sum=85968us count=14 count_batch=110002
+2026-10-29 08:55:30.843Z info(state_machine): create_transfers: p0=13us mean=276us p100=15333us sum=269468us count=974 count_batch=140028
+2026-10-29 08:55:30.843Z info(state_machine): compact: p0=42us mean=3056us p100=136221us sum=3028511us count=991 count_batch=991
+2026-10-29 08:55:30.843Z info(state_machine): checkpoint: p0=2909us mean=2909us p100=2909us sum=2909us count=1 count_batch=1
+2026-10-29 08:55:30.844Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=992 current_checkpoint=0 next_checkpoint=959)
+2026-10-29 08:55:30.845Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=992 checkpoint=0..959 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:30.846Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=992 new_checkpoint=959)
+2026-10-29 08:55:32.372Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=959..1919 commit_min=1951 op=1952 commit_max=1951 op_prepare_max=1967 free_set.acquired=442 free_set.released=198)
+2026-10-29 08:55:32.374Z info(state_machine): create_transfers: p0=13us mean=87us p100=605us sum=84332us count=960 count_batch=29203
+2026-10-29 08:55:32.374Z info(state_machine): compact: p0=40us mean=611us p100=21825us sum=587282us count=960 count_batch=960
+2026-10-29 08:55:32.374Z info(state_machine): checkpoint: p0=2552us mean=2552us p100=2552us sum=2552us count=1 count_batch=1
+2026-10-29 08:55:32.374Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=1952 current_checkpoint=959 next_checkpoint=1919)
+2026-10-29 08:55:32.375Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=1952 checkpoint=959..1919 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:32.377Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=1952 new_checkpoint=1919)
+2026-10-29 08:55:33.859Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=1919..2879 commit_min=2911 op=2912 commit_max=2911 op_prepare_max=2927 free_set.acquired=499 free_set.released=229)
+2026-10-29 08:55:33.865Z info(state_machine): create_transfers: p0=14us mean=86us p100=478us sum=83317us count=960 count_batch=29997
+2026-10-29 08:55:33.865Z info(state_machine): compact: p0=43us mean=588us p100=19468us sum=564868us count=960 count_batch=960
+2026-10-29 08:55:33.865Z info(state_machine): checkpoint: p0=5867us mean=5867us p100=5867us sum=5867us count=1 count_batch=1
+2026-10-29 08:55:33.865Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=2912 current_checkpoint=1919 next_checkpoint=2879)
+2026-10-29 08:55:33.866Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=2912 checkpoint=1919..2879 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:33.867Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=2912 new_checkpoint=2879)
+2026-10-29 08:55:35.336Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=2879..3839 commit_min=3871 op=3872 commit_max=3871 op_prepare_max=3887 free_set.acquired=557 free_set.released=255)
+2026-10-29 08:55:35.344Z info(state_machine): create_transfers: p0=14us mean=85us p100=541us sum=81737us count=960 count_batch=29368
+2026-10-29 08:55:35.344Z info(state_machine): compact: p0=45us mean=564us p100=22131us sum=541840us count=960 count_batch=960
+2026-10-29 08:55:35.344Z info(state_machine): checkpoint: p0=8167us mean=8167us p100=8167us sum=8167us count=1 count_batch=1
+2026-10-29 08:55:35.344Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=3872 current_checkpoint=2879 next_checkpoint=3839)
+2026-10-29 08:55:35.344Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=3872 checkpoint=2879..3839 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:35.345Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=3872 new_checkpoint=3839)
+2026-10-29 08:55:36.683Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=3839..4799 commit_min=4831 op=4832 commit_max=4831 op_prepare_max=4847 free_set.acquired=621 free_set.released=287)
+2026-10-29 08:55:36.690Z info(state_machine): create_transfers: p0=13us mean=79us p100=425us sum=76272us count=960 count_batch=29404
+2026-10-29 08:55:36.690Z info(state_machine): compact: p0=42us mean=628us p100=25107us sum=603241us count=960 count_batch=960
+2026-10-29 08:55:36.690Z info(state_machine): checkpoint: p0=6788us mean=6788us p100=6788us sum=6788us count=1 count_batch=1
+2026-10-29 08:55:36.690Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=4832 current_checkpoint=3839 next_checkpoint=4799)
+2026-10-29 08:55:36.690Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=4832 checkpoint=3839..4799 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:36.692Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=4832 new_checkpoint=4799)
+2026-10-29 08:55:37.997Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=4799..5759 commit_min=5791 op=5792 commit_max=5791 op_prepare_max=5807 free_set.acquired=485 free_set.released=109)
+2026-10-29 08:55:37.999Z info(state_machine): create_transfers: p0=12us mean=82us p100=452us sum=79663us count=960 count_batch=29647
+2026-10-29 08:55:37.999Z info(state_machine): compact: p0=44us mean=516us p100=22196us sum=495989us count=960 count_batch=960
+2026-10-29 08:55:37.999Z info(state_machine): checkpoint: p0=1947us mean=1947us p100=1947us sum=1947us count=1 count_batch=1
+2026-10-29 08:55:37.999Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=5792 current_checkpoint=4799 next_checkpoint=5759)
+2026-10-29 08:55:38.000Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=5792 checkpoint=4799..5759 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:38.001Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=5792 new_checkpoint=5759)
+2026-10-29 08:55:39.193Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=5759..6719 commit_min=6751 op=6752 commit_max=6751 op_prepare_max=6767 free_set.acquired=556 free_set.released=145)
+2026-10-29 08:55:39.195Z info(state_machine): create_transfers: p0=14us mean=78us p100=499us sum=75643us count=960 count_batch=29939
+2026-10-29 08:55:39.195Z info(state_machine): compact: p0=40us mean=493us p100=17578us sum=473696us count=960 count_batch=960
+2026-10-29 08:55:39.195Z info(state_machine): checkpoint: p0=2120us mean=2120us p100=2120us sum=2120us count=1 count_batch=1
+2026-10-29 08:55:39.195Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=6752 current_checkpoint=5759 next_checkpoint=6719)
+2026-10-29 08:55:39.196Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=6752 checkpoint=5759..6719 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:39.197Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=6752 new_checkpoint=6719)
+2026-10-29 08:55:40.579Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=6719..7679 commit_min=7711 op=7712 commit_max=7711 op_prepare_max=7727 free_set.acquired=617 free_set.released=169)
+2026-10-29 08:55:40.581Z info(state_machine): create_transfers: p0=14us mean=84us p100=593us sum=81175us count=960 count_batch=29363
+2026-10-29 08:55:40.581Z info(state_machine): compact: p0=34us mean=562us p100=19865us sum=539753us count=960 count_batch=960
+2026-10-29 08:55:40.581Z info(state_machine): checkpoint: p0=2388us mean=2388us p100=2388us sum=2388us count=1 count_batch=1
+2026-10-29 08:55:40.581Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=7712 current_checkpoint=6719 next_checkpoint=7679)
+2026-10-29 08:55:40.582Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=7712 checkpoint=6719..7679 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:40.583Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=7712 new_checkpoint=7679)
+2026-10-29 08:55:41.843Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=7679..8639 commit_min=8671 op=8672 commit_max=8671 op_prepare_max=8687 free_set.acquired=680 free_set.released=198)
+2026-10-29 08:55:41.848Z info(state_machine): create_transfers: p0=13us mean=76us p100=545us sum=73805us count=960 count_batch=28459
+2026-10-29 08:55:41.848Z info(state_machine): compact: p0=43us mean=555us p100=23567us sum=532871us count=960 count_batch=960
+2026-10-29 08:55:41.848Z info(state_machine): checkpoint: p0=5403us mean=5403us p100=5403us sum=5403us count=1 count_batch=1
+2026-10-29 08:55:41.849Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=8672 current_checkpoint=7679 next_checkpoint=8639)
+2026-10-29 08:55:41.849Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=8672 checkpoint=7679..8639 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:41.850Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=8672 new_checkpoint=8639)
+2026-10-29 08:55:43.181Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=8639..9599 commit_min=9631 op=9632 commit_max=9631 op_prepare_max=9647 free_set.acquired=741 free_set.released=224)
+2026-10-29 08:55:43.187Z info(state_machine): create_transfers: p0=14us mean=91us p100=4047us sum=87801us count=960 count_batch=28843
+2026-10-29 08:55:43.187Z info(state_machine): compact: p0=43us mean=571us p100=24499us sum=548422us count=960 count_batch=960
+2026-10-29 08:55:43.187Z info(state_machine): checkpoint: p0=5689us mean=5689us p100=5689us sum=5689us count=1 count_batch=1
+2026-10-29 08:55:43.187Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=9632 current_checkpoint=8639 next_checkpoint=9599)
+2026-10-29 08:55:43.188Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=9632 checkpoint=8639..9599 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:43.189Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=9632 new_checkpoint=9599)
+2026-10-29 08:55:44.619Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=9599..10559 commit_min=10591 op=10592 commit_max=10591 op_prepare_max=10607 free_set.acquired=793 free_set.released=248)
+2026-10-29 08:55:44.633Z info(state_machine): create_transfers: p0=14us mean=88us p100=677us sum=85387us count=960 count_batch=29656
+2026-10-29 08:55:44.633Z info(state_machine): compact: p0=42us mean=617us p100=29266us sum=592545us count=960 count_batch=960
+2026-10-29 08:55:44.633Z info(state_machine): checkpoint: p0=13606us mean=13606us p100=13606us sum=13606us count=1 count_batch=1
+2026-10-29 08:55:44.633Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=10592 current_checkpoint=9599 next_checkpoint=10559)
+2026-10-29 08:55:44.633Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=10592 checkpoint=9599..10559 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:44.634Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=10592 new_checkpoint=10559)
+2026-10-29 08:55:46.110Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=10559..11519 commit_min=11551 op=11552 commit_max=11551 op_prepare_max=11567 free_set.acquired=824 free_set.released=254)
+2026-10-29 08:55:46.126Z info(state_machine): create_transfers: p0=14us mean=85us p100=355us sum=81791us count=960 count_batch=29982
+2026-10-29 08:55:46.126Z info(state_machine): compact: p0=38us mean=615us p100=22076us sum=591133us count=960 count_batch=960
+2026-10-29 08:55:46.126Z info(state_machine): checkpoint: p0=15530us mean=15530us p100=15530us sum=15530us count=1 count_batch=1
+2026-10-29 08:55:46.126Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=11552 current_checkpoint=10559 next_checkpoint=11519)
+2026-10-29 08:55:46.127Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=11552 checkpoint=10559..11519 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:46.128Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=11552 new_checkpoint=11519)
+2026-10-29 08:55:47.510Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=11519..12479 commit_min=12511 op=12512 commit_max=12511 op_prepare_max=12527 free_set.acquired=881 free_set.released=279)
+2026-10-29 08:55:47.520Z info(state_machine): create_transfers: p0=15us mean=79us p100=1352us sum=76171us count=960 count_batch=29963
+2026-10-29 08:55:47.520Z info(state_machine): compact: p0=44us mean=597us p100=29623us sum=573373us count=960 count_batch=960
+2026-10-29 08:55:47.520Z info(state_machine): checkpoint: p0=9903us mean=9903us p100=9903us sum=9903us count=1 count_batch=1
+2026-10-29 08:55:47.520Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=12512 current_checkpoint=11519 next_checkpoint=12479)
+2026-10-29 08:55:47.521Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=12512 checkpoint=11519..12479 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:47.524Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=12512 new_checkpoint=12479)
+2026-10-29 08:55:49.010Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=12479..13439 commit_min=13471 op=13472 commit_max=13471 op_prepare_max=13487 free_set.acquired=944 free_set.released=311)
+2026-10-29 08:55:49.026Z info(state_machine): create_transfers: p0=14us mean=87us p100=859us sum=83577us count=960 count_batch=29889
+2026-10-29 08:55:49.026Z info(state_machine): compact: p0=22us mean=658us p100=28128us sum=631830us count=960 count_batch=960
+2026-10-29 08:55:49.026Z info(state_machine): checkpoint: p0=15971us mean=15971us p100=15971us sum=15971us count=1 count_batch=1
+2026-10-29 08:55:49.026Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=13472 current_checkpoint=12479 next_checkpoint=13439)
+2026-10-29 08:55:49.027Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=13472 checkpoint=12479..13439 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:49.028Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=13472 new_checkpoint=13439)
+2026-10-29 08:55:50.326Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=13439..14399 commit_min=14431 op=14432 commit_max=14431 op_prepare_max=14447 free_set.acquired=800 free_set.released=131)
+2026-10-29 08:55:50.328Z info(state_machine): create_transfers: p0=12us mean=83us p100=411us sum=80055us count=960 count_batch=28649
+2026-10-29 08:55:50.328Z info(state_machine): compact: p0=43us mean=532us p100=19267us sum=510898us count=960 count_batch=960
+2026-10-29 08:55:50.328Z info(state_machine): checkpoint: p0=1772us mean=1772us p100=1772us sum=1772us count=1 count_batch=1
+2026-10-29 08:55:50.328Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=14432 current_checkpoint=13439 next_checkpoint=14399)
+2026-10-29 08:55:50.329Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=14432 checkpoint=13439..14399 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:50.330Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=14432 new_checkpoint=14399)
+2026-10-29 08:55:51.560Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=14399..15359 commit_min=15391 op=15392 commit_max=15391 op_prepare_max=15407 free_set.acquired=867 free_set.released=167)
+2026-10-29 08:55:51.562Z info(state_machine): create_transfers: p0=12us mean=85us p100=1604us sum=81813us count=960 count_batch=28245
+2026-10-29 08:55:51.562Z info(state_machine): compact: p0=43us mean=534us p100=17731us sum=512947us count=960 count_batch=960
+2026-10-29 08:55:51.562Z info(state_machine): checkpoint: p0=2331us mean=2331us p100=2331us sum=2331us count=1 count_batch=1
+2026-10-29 08:55:51.562Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=15392 current_checkpoint=14399 next_checkpoint=15359)
+2026-10-29 08:55:51.563Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=15392 checkpoint=14399..15359 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:51.564Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=15392 new_checkpoint=15359)
+2026-10-29 08:55:52.893Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=15359..16319 commit_min=16351 op=16352 commit_max=16351 op_prepare_max=16367 free_set.acquired=930 free_set.released=196)
+2026-10-29 08:55:52.895Z info(state_machine): create_transfers: p0=13us mean=81us p100=553us sum=78372us count=960 count_batch=29757
+2026-10-29 08:55:52.895Z info(state_machine): compact: p0=41us mean=571us p100=25297us sum=549035us count=960 count_batch=960
+2026-10-29 08:55:52.895Z info(state_machine): checkpoint: p0=2343us mean=2343us p100=2343us sum=2343us count=1 count_batch=1
+2026-10-29 08:55:52.895Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=16352 current_checkpoint=15359 next_checkpoint=16319)
+2026-10-29 08:55:52.896Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=16352 checkpoint=15359..16319 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:52.897Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=16352 new_checkpoint=16319)
+2026-10-29 08:55:54.103Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=16319..17279 commit_min=17311 op=17312 commit_max=17311 op_prepare_max=17327 free_set.acquired=992 free_set.released=225)
+2026-10-29 08:55:54.112Z info(state_machine): create_transfers: p0=13us mean=75us p100=376us sum=72589us count=960 count_batch=28606
+2026-10-29 08:55:54.112Z info(state_machine): compact: p0=41us mean=554us p100=20065us sum=532301us count=960 count_batch=960
+2026-10-29 08:55:54.112Z info(state_machine): checkpoint: p0=9186us mean=9186us p100=9186us sum=9186us count=1 count_batch=1
+2026-10-29 08:55:54.112Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=17312 current_checkpoint=16319 next_checkpoint=17279)
+2026-10-29 08:55:54.113Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=17312 checkpoint=16319..17279 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:54.114Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=17312 new_checkpoint=17279)
+2026-10-29 08:55:55.549Z info(replica): 0N: commit_checkpoint_data: checkpoint_data start (checkpoint=17279..18239 commit_min=18271 op=18272 commit_max=18271 op_prepare_max=18287 free_set.acquired=1053 free_set.released=253)
+2026-10-29 08:55:55.566Z info(state_machine): create_transfers: p0=14us mean=91us p100=876us sum=88310us count=960 count_batch=28989
+2026-10-29 08:55:55.566Z info(state_machine): compact: p0=42us mean=569us p100=19730us sum=546600us count=960 count_batch=960
+2026-10-29 08:55:55.566Z info(state_machine): checkpoint: p0=17005us mean=17005us p100=17005us sum=17005us count=1 count_batch=1
+2026-10-29 08:55:55.566Z info(replica): 0N: commit_checkpoint_data_callback_join: checkpoint_data done (op=18272 current_checkpoint=17279 next_checkpoint=18239)
+2026-10-29 08:55:55.567Z info(replica): 0N: commit_checkpoint_superblock: checkpoint_superblock start (op=18272 checkpoint=17279..18239 view_durable=1..1 log_view_durable=1..1)
+2026-10-29 08:55:55.568Z info(replica): 0N: commit_checkpoint_superblock_callback: checkpoint_superblock done (op=18272 new_checkpoint=18239)
+2026-10-29 08:55:55.731Z info(message_bus): 0: recv_update_peer: connection from client=82273437291346949635168345253961279643
+2026-10-29 08:55:56.985Z info(message_bus): 0: on_recv: from=vsr.Peer{ .client = 82273437291346949635168345253961279643 } orderly shutdown
+2026-10-29 08:56:00.108Z info(message_bus): 0: recv_update_peer: connection from client_likely=149772602435208477776618067802085389633
+2026-10-29 08:56:01.244Z info(message_bus): 0: on_recv: from=vsr.Peer{ .client_likely = 149772602435208477776618067802085389633 } orderly shutdown

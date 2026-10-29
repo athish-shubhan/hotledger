@@ -1,0 +1,17 @@
+19:53:27.960760 [w0] assigned p5 from offset 0
+19:53:27.961138 [w0] assigned p6 from offset 0
+19:53:27.961266 [w0] assigned p7 from offset 0
+19:53:27.961420 [w0] assigned p0 from offset 0
+19:53:27.961683 [w0] assigned p1 from offset 0
+19:53:27.961959 [w0] assigned p2 from offset 0
+19:53:27.962191 [w0] assigned p3 from offset 0
+19:53:27.962334 [w0] assigned p4 from offset 0
+19:53:28.455112 [w0] revoked p6
+19:53:28.455126 [w0] revoked p7
+19:53:28.455128 [w0] revoked p5
+19:53:28.455129 [w0] revoked p4
+19:54:03.962863 [w0] stopped: applied=78024 batches=4700 fenced=0
+19:54:03.962981 [w0] revoked p0
+19:54:03.963009 [w0] revoked p1
+19:54:03.963011 [w0] revoked p2
+19:54:03.963013 [w0] revoked p3

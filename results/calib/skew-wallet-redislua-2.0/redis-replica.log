@@ -1,0 +1,68 @@
+16495:C 29 Oct 2026 19:54:37.504 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+16495:C 29 Oct 2026 19:54:37.504 # Redis version=7.0.15, bits=64, commit=00000000, modified=0, pid=16495, just started
+16495:C 29 Oct 2026 19:54:37.504 # Configuration loaded
+16495:S 29 Oct 2026 19:54:37.505 * monotonic clock: POSIX clock_gettime
+16495:S 29 Oct 2026 19:54:37.505 # Warning: Could not create server TCP listening socket ::*:6391: unable to bind socket, errno: 97
+16495:S 29 Oct 2026 19:54:37.505 * Running mode=standalone, port=6391.
+16495:S 29 Oct 2026 19:54:37.505 # Server initialized
+16495:S 29 Oct 2026 19:54:37.505 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+16495:S 29 Oct 2026 19:54:37.507 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+16495:S 29 Oct 2026 19:54:37.507 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+16495:S 29 Oct 2026 19:54:37.507 * Ready to accept connections
+16495:S 29 Oct 2026 19:54:37.507 * Connecting to MASTER 127.0.0.1:6398
+16495:S 29 Oct 2026 19:54:37.507 * MASTER <-> REPLICA sync started
+16495:S 29 Oct 2026 19:54:37.507 * Non blocking connect for SYNC fired the event.
+16495:S 29 Oct 2026 19:54:37.508 * Master replied to PING, replication can continue...
+16495:S 29 Oct 2026 19:54:37.508 * Partial resynchronization not possible (no cached master)
+16495:S 29 Oct 2026 19:54:42.527 * Full resync from master: 199adb18e5950a7195bf7622119ec613c09b25d6:2172184
+16495:S 29 Oct 2026 19:54:42.531 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+16495:S 29 Oct 2026 19:54:42.562 * MASTER <-> REPLICA sync: Flushing old data
+16495:S 29 Oct 2026 19:54:42.562 * MASTER <-> REPLICA sync: Loading DB in memory
+16495:S 29 Oct 2026 19:54:42.564 * Loading RDB produced by version 7.0.15
+16495:S 29 Oct 2026 19:54:42.564 * RDB age 0 seconds
+16495:S 29 Oct 2026 19:54:42.564 * RDB memory usage when created 8.05 Mb
+16495:S 29 Oct 2026 19:54:42.617 * Done loading RDB, keys loaded: 2, keys expired: 0.
+16495:S 29 Oct 2026 19:54:42.617 * MASTER <-> REPLICA sync: Finished with success
+16495:S 29 Oct 2026 19:54:42.617 * Creating AOF incr file temp-appendonly.aof.incr on background rewrite
+16495:S 29 Oct 2026 19:54:42.618 * Background append only file rewriting started by pid 16518
+16518:C 29 Oct 2026 19:54:42.657 * Successfully created the temporary AOF base file temp-rewriteaof-bg-16518.aof
+16518:C 29 Oct 2026 19:54:42.658 * Fork CoW for AOF rewrite: current 0 MB, peak 0 MB, average 0 MB
+16495:S 29 Oct 2026 19:54:42.729 * Background AOF rewrite terminated with success
+16495:S 29 Oct 2026 19:54:42.729 * Successfully renamed the temporary AOF base file temp-rewriteaof-bg-16518.aof into appendonly.aof.2.base.rdb
+16495:S 29 Oct 2026 19:54:42.729 * Successfully renamed the temporary AOF incr file temp-appendonly.aof.incr into appendonly.aof.2.incr.aof
+16495:S 29 Oct 2026 19:54:42.730 * Removing the history file appendonly.aof.1.incr.aof in the background
+16495:S 29 Oct 2026 19:54:42.730 * Removing the history file appendonly.aof.1.base.rdb in the background
+16495:S 29 Oct 2026 19:54:42.731 * Background AOF rewrite finished successfully
+16495:S 29 Oct 2026 19:54:55.653 * Starting automatic rewriting of AOF on 8954% growth
+16495:S 29 Oct 2026 19:54:55.674 * Creating AOF incr file appendonly.aof.3.incr.aof on background rewrite
+16495:S 29 Oct 2026 19:54:55.675 * Background append only file rewriting started by pid 16551
+16551:C 29 Oct 2026 19:54:55.898 * Successfully created the temporary AOF base file temp-rewriteaof-bg-16551.aof
+16551:C 29 Oct 2026 19:54:55.899 * Fork CoW for AOF rewrite: current 9 MB, peak 9 MB, average 8 MB
+16495:S 29 Oct 2026 19:54:55.956 * Background AOF rewrite terminated with success
+16495:S 29 Oct 2026 19:54:55.956 * Successfully renamed the temporary AOF base file temp-rewriteaof-bg-16551.aof into appendonly.aof.3.base.rdb
+16495:S 29 Oct 2026 19:54:55.957 * Removing the history file appendonly.aof.2.incr.aof in the background
+16495:S 29 Oct 2026 19:54:55.957 * Removing the history file appendonly.aof.2.base.rdb in the background
+16495:S 29 Oct 2026 19:54:55.958 * Background AOF rewrite finished successfully
+16495:S 29 Oct 2026 19:55:06.188 * Starting automatic rewriting of AOF on 955% growth
+16495:S 29 Oct 2026 19:55:06.278 * Creating AOF incr file appendonly.aof.4.incr.aof on background rewrite
+16495:S 29 Oct 2026 19:55:06.285 * Background append only file rewriting started by pid 16557
+16557:C 29 Oct 2026 19:55:06.910 * Successfully created the temporary AOF base file temp-rewriteaof-bg-16557.aof
+16557:C 29 Oct 2026 19:55:06.912 * Fork CoW for AOF rewrite: current 10 MB, peak 10 MB, average 9 MB
+16495:S 29 Oct 2026 19:55:06.937 * Background AOF rewrite terminated with success
+16495:S 29 Oct 2026 19:55:06.937 * Successfully renamed the temporary AOF base file temp-rewriteaof-bg-16557.aof into appendonly.aof.4.base.rdb
+16495:S 29 Oct 2026 19:55:06.938 * Removing the history file appendonly.aof.3.incr.aof in the background
+16495:S 29 Oct 2026 19:55:06.940 * Removing the history file appendonly.aof.3.base.rdb in the background
+16495:S 29 Oct 2026 19:55:06.942 * Background AOF rewrite finished successfully
+16495:S 29 Oct 2026 19:55:21.426 # Connection with master lost.
+16495:S 29 Oct 2026 19:55:21.426 * Caching the disconnected master state.
+16495:S 29 Oct 2026 19:55:21.426 * Reconnecting to MASTER 127.0.0.1:6398
+16495:S 29 Oct 2026 19:55:21.426 * MASTER <-> REPLICA sync started
+16495:S 29 Oct 2026 19:55:21.426 * Non blocking connect for SYNC fired the event.
+16495:S 29 Oct 2026 19:55:21.431 * Master replied to PING, replication can continue...
+16495:S 29 Oct 2026 19:55:21.431 * Trying a partial resynchronization (request 199adb18e5950a7195bf7622119ec613c09b25d6:172965254).
+16495:S 29 Oct 2026 19:55:21.431 * Successful partial resynchronization with master.
+16495:S 29 Oct 2026 19:55:21.431 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+16495:signal-handler (1793264121) Received SIGTERM scheduling shutdown...
+16495:S 29 Oct 2026 19:55:21.657 # User requested shutdown...
+16495:S 29 Oct 2026 19:55:21.657 * Calling fsync() on the AOF file.
+16495:S 29 Oct 2026 19:55:21.657 # Redis is now ready to exit, bye bye...
