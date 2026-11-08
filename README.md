@@ -1,6 +1,6 @@
 # HotLedger
 
-A contended-state lab for TikTok LIVE. Six ways to keep hot-row state correct
+A contended-state lab for live-streaming workloads (modelled on TikTok LIVE-style gifts, flash sales and countdown auctions; not affiliated with or derived from TikTok). Six ways to keep hot-row state correct
 when most users write the same few rows at once, on three LIVE semantics:
 
 - **gift wallet**: commutative credits, exactly-once charges;
@@ -28,7 +28,7 @@ orchestrator are part of the repo.
 
 One 2-vCPU, 7 GB VM runs the databases, Redis, TigerBeetle, the broker, the
 writers and the clients, so read the numbers as a comparison between designs,
-not as capacity. Full tables: [`results/SUMMARY.md`](results/SUMMARY.md).
+not as capacity. Most configurations ran once (no repeats or confidence intervals unless stated), so small differences are within noise. Full tables: [`results/SUMMARY.md`](results/SUMMARY.md).
 Method, invariants and the decision matrix: [`docs/DESIGN.md`](docs/DESIGN.md).
 What surprised us: [`docs/FINDINGS.md`](docs/FINDINGS.md).
 
@@ -140,7 +140,7 @@ Kafka-protocol broker is built in.
 
 ```bash
 go build -o bin/hotledger ./cmd/hotledger
-go test ./...
+go test -race ./...
 
 # one experiment: design, semantics, skew, faults; prints the checker's verdict
 ./bin/hotledger run -design escrow -skew 2.0 -duration 30s -dup-frac 0.02 \
@@ -196,23 +196,3 @@ docs/                 DESIGN.md (semantics, designs, invariants, decision matrix
   window under study.
 - **Stretch goals:** cross-region active-active wallet, Raft-replicated single
   writer.
-
-## Resume bullets (numbers from results/, keep the hardware caveat)
-
-- Built HotLedger, a Go lab comparing six designs for hot-row state (row
-  locks on Postgres and MySQL, conditional updates, escrow sub-accounts, Redis
-  Lua with an async log, a Kafka single writer committing offsets in the same
-  Postgres transaction, and TigerBeetle) on gift-wallet, flash-sale and
-  countdown-auction semantics under Zipf skew and a 10x burst.
-- At Zipf s = 2.0 on a 2-vCPU VM, escrow sustained 3.3k flash-sale orders/s
-  against 0.6k for row locking, and the single writer 6.2k at 86 ms p99 apply latency; in the
-  LIVE Match burst row-lock p99 reached 103 s against 336 ms for the single
-  writer and 18 ms for TigerBeetle.
-- Wrote a history-based checker (conservation, exactly-once, no oversell, no
-  false rejection, and an O(n log n) linearizability check for auctions where
-  Porcupine ran out of memory) that held at zero violations across
-  118 injected crashes, partitions, zombie writers and
-  failovers plus 114k duplicate submissions for every design except Redis and caught all 5 seeded bugs; it showed the Redis design
-  losing 23k acknowledged transfers and driving 8 Postgres accounts negative
-  after a partition and failover, and two bidders both told they led an
-  auction after a plain failover.
